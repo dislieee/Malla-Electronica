@@ -1,1 +1,112 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Malla Ingeniería Civil Electrónica</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <h1>Malla Curricular Ingeniería Civil Electrónica</h1>
+  <div id="malla">
+    <!-- Sem 1 -->
+    <div class="semestre"><div class="semestre-title">Semestre 1</div>
+      <button class="ramo locked" data-nombre="Química General">🔒 Química General</button>
+      <button class="ramo locked" data-nombre="Dibujo Técnico para Ingeniería">🔒 Dibujo Técnico para Ingeniería</button>
+      <button class="ramo locked" data-nombre="Taller de Matemática">🔒 Taller de Matemática</button>
+      <button class="ramo locked" data-nombre="Introducción a la Ingeniería">🔒 Introducción a la Ingeniería</button>
+      <button class="ramo locked" data-nombre="Computación Aplicada">🔒 Computación Aplicada</button>
+      <button class="ramo locked" data-nombre="Habilidades para el Razonamiento Lógico">🔒 Habilidades para el Razonamiento Lógico</button>
+      <button class="ramo locked" data-nombre="Formación Vida y Bienestar">🔒 Formación Vida y Bienestar</button>
+    </div>
+    <!-- Sem 2 -->
+    <div class="semestre"><div class="semestre-title">Semestre 2</div>
+      <button class="ramo locked" data-nombre="Ciencias de los Materiales" data-requiere="Química General">🔒 Ciencias de los Materiales</button>
+      <button class="ramo locked" data-nombre="Mecánica Clásica">🔒 Mecánica Clásica</button>
+      <button class="ramo locked" data-nombre="Cálculo Diferencial" data-requiere="Taller de Matemática">🔒 Cálculo Diferencial</button>
+      <button class="ramo locked" data-nombre="Álgebra y Geometría">🔒 Álgebra y Geometría</button>
+      <button class="ramo locked" data-nombre="Habilidades de Trabajo Académico">🔒 Habilidades de Trabajo Académico</button>
+      <button class="ramo locked" data-nombre="Pensamiento Crítico">🔒 Pensamiento Crítico</button>
+    </div>
+    <!-- Sem 3 -->
+    <div class="semestre"><div class="semestre-title">Semestre 3</div>
+      <button class="ramo locked" data-nombre="Programación de Computadores" data-requiere="Computación Aplicada">🔒 Programación de Computadores</button>
+      <button class="ramo locked" data-nombre="Electromagnetismo" data-requiere="Mecánica Clásica">🔒 Electromagnetismo</button>
+      <button class="ramo locked" data-nombre="Cálculo Integral" data-requiere="Cálculo Diferencial">🔒 Cálculo Integral</button>
+      <button class="ramo locked" data-nombre="Álgebra Matricial" data-requiere="Álgebra y Geometría">🔒 Álgebra Matricial</button>
+      <button class="ramo locked" data-nombre="Taller de Electrotecnia">🔒 Taller de Electrotecnia</button>
+      <button class="ramo locked" data-nombre="Formación Sello Sustentabilidad">🔒 Formación Sello Sustentabilidad</button>
+    </div>
+    <!-- Sem 4 -->
+    <div class="semestre"><div class="semestre-title">Semestre 4</div>
+      <button class="ramo locked" data-nombre="Teoría de Sistemas" data-requiere="Ciencias de los Materiales">🔒 Teoría de Sistemas</button>
+      <button class="ramo locked" data-nombre="Óptica y Ondas" data-requiere="Electromagnetismo">🔒 Óptica y Ondas</button>
+      <button class="ramo locked" data-nombre="Cálculo en Varias Variables" data-requiere="Cálculo Integral">🔒 Cálculo en Varias Variables</button>
+      <button class="ramo locked" data-nombre="Ecuaciones Diferenciales" data-requiere="Cálculo Integral">🔒 Ecuaciones Diferenciales</button>
+      <button class="ramo locked" data-nombre="Estadística y Probabilidades" data-requiere="Álgebra Matricial">🔒 Estadística y Probabilidades</button>
+      <button class="ramo locked" data-nombre="Inglés I">🔒 Inglés I</button>
+    </div>
+    <!-- Sem 5 -->
+    <div class="semestre"><div class="semestre-title">Semestre 5</div>
+      <button class="ramo locked" data-nombre="Administración" data-requiere="Teoría de Sistemas">🔒 Administración</button>
+      <button class="ramo locked" data-nombre="Termodinámica" data-requiere="Cálculo en Varias Variables">🔒 Termodinámica</button>
+      <button class="ramo locked" data-nombre="Análisis de Redes I" data-requiere="Cálculo Integral">🔒 Análisis de Redes I</button>
+      <button class="ramo locked" data-nombre="Análisis de Señales" data-requiere="Ecuaciones Diferenciales">🔒 Análisis de Señales</button>
+      <button class="ramo locked" data-nombre="Física Atómica" data-requiere="Electromagnetismo">🔒 Física Atómica</button>
+      <button class="ramo locked" data-nombre="Inglés II" data-requiere="Inglés I">🔒 Inglés II</button>
+    </div>
+    <!-- Sem 6 -->
+    <div class="semestre"><div class="semestre-title">Semestre 6</div>
+      <button class="ramo locked" data-nombre="Gestión y Proyectos" data-requiere="Administración">🔒 Gestión y Proyectos</button>
+      <button class="ramo locked" data-nombre="Introducción a la Economía">🔒 Introducción a la Economía</button>
+      <button class="ramo locked" data-nombre="Análisis de Redes II" data-requiere="Análisis de Redes I">🔒 Análisis de Redes II</button>
+      <button class="ramo locked" data-nombre="Electrónica I" data-requiere="Análisis de Redes I">🔒 Electrónica I</button>
+      <button class="ramo locked" data-nombre="Ingeniería Ambiental">🔒 Ingeniería Ambiental</button>
+      <button class="ramo locked" data-nombre="Inglés III" data-requiere="Inglés II">🔒 Inglés III</button>
+    </div>
+    <!-- Sem 7 -->
+    <div class="semestre"><div class="semestre-title">Semestre 7</div>
+      <button class="ramo locked" data-nombre="Conversión Energética" data-requiere="Análisis de Redes II">🔒 Conversión Energética</button>
+      <button class="ramo locked" data-nombre="Investigación de Operaciones" data-requiere="Ecuaciones Diferenciales">🔒 Investigación de Operaciones</button>
+      <button class="ramo locked" data-nombre="Electrónica II" data-requiere="Electrónica I">🔒 Electrónica II</button>
+      <button class="ramo locked" data-nombre="Análisis de Sistemas" data-requiere="Teoría de Sistemas">🔒 Análisis de Sistemas</button>
+      <button class="ramo locked" data-nombre="Redes de Comunicación" data-requiere="Análisis de Redes II">🔒 Redes de Comunicación</button>
+      <button class="ramo locked" data-nombre="Metodología de Investigación">🔒 Metodología de Investigación</button>
+    </div>
+    <!-- Sem 8 -->
+    <div class="semestre"><div class="semestre-title">Semestre 8</div>
+      <button class="ramo locked" data-nombre="Automatización Industrial" data-requiere="Electrónica II">🔒 Automatización Industrial</button>
+      <button class="ramo locked" data-nombre="Microondas y Líneas RF" data-requiere="Electrónica II">🔒 Microondas y Líneas RF</button>
+      <button class="ramo locked" data-nombre="Sistemas Digitales" data-requiere="Electrónica I">🔒 Sistemas Digitales</button>
+      <button class="ramo locked" data-nombre="Control de Sistemas" data-requiere="Análisis de Sistemas">🔒 Control de Sistemas</button>
+      <button class="ramo locked" data-nombre="Práctica Intermedia">🔒 Práctica Intermedia</button>
+    </div>
+    <!-- Sem 9 -->
+    <div class="semestre"><div class="semestre-title">Semestre 9</div>
+      <button class="ramo locked" data-nombre="Microprocesadores" data-requiere="Sistemas Digitales">🔒 Microprocesadores</button>
+      <button class="ramo locked" data-nombre="Electivo Especialidad I">🔒 Electivo Especialidad I</button>
+      <button class="ramo locked" data-nombre="Procesamiento Digital de Señales" data-requiere="Análisis de Señales">🔒 Procesamiento Digital de Señales</button>
+      <button class="ramo locked" data-nombre="Sistemas de Telecomunicaciones" data-requiere="Análisis de Señales">🔒 Telecomunicaciones</button>
+      <button class="ramo locked" data-nombre="Electivo Especialidad II">🔒 Electivo Especialidad II</button>
+      <button class="ramo locked" data-nombre="Formación Sello Tecnología">🔒 Formación Sello Tecnología</button>
+    </div>
+    <!-- Sem 10 -->
+    <div class="semestre"><div class="semestre-title">Semestre 10</div>
+      <button class="ramo locked" data-nombre="Electrónica de Potencia" data-requiere="Sistemas de Telecomunicaciones">🔒 Electrónica de Potencia</button>
+      <button class="ramo locked" data-nombre="Electivo Especialidad III">🔒 Electivo Especialidad III</button>
+      <button class="ramo locked" data-nombre="Diseño RF">🔒 Diseño RF</button>
+      <button class="ramo locked" data-nombre="Electivo Especialidad IV">🔒 Electivo Especialidad IV</button>
+      <button class="ramo locked" data-nombre="Antenas y Radiopropagación" data-requiere="Sistemas de Telecomunicaciones">🔒 Antenas y Radiopropagación</button>
+      <button class="ramo locked" data-nombre="Formación Ciudadanía">🔒 Formación Ciudadanía</button>
+    </div>
+    <!-- Sem 11 -->
+    <div class="semestre"><div class="semestre-title">Semestre 11</div>
+      <button class="ramo locked" data-nombre="Trabajo de Título" data-requiere="Electrónica de Potencia">🔒 Trabajo de Título</button>
+      <button class="ramo locked" data-nombre="Formación Ética Profesional">🔒 Formación Ética Profesional</button>
+      <button class="ramo locked" data-nombre="Práctica Profesional" data-requiere="Trabajo de Título">🔒 Práctica Profesional</button>
+      <button class="ramo locked" data-nombre="Formación Empleabilidad">🔒 Formación Empleabilidad</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
