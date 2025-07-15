@@ -1,1 +1,72 @@
-
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d6bcf5;
+  color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+h1 {
+  margin: 20px 0;
+}
+#malla {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  width: 95vw;
+  height: 75vh;
+  background-color: #b799e0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  scroll-behavior: smooth;
+}
+.semestre {
+  background-color: #e6dcf9;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 250px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  user-select: none;
+}
+.semestre-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #4b2995;
+  border-bottom: 2px solid #7f57d9;
+  padding-bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.ramo {
+  width: 90%;
+  margin: 5px 0;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.ramo.locked {
+  background-color: #9c8ad1;
+  color: #fff;
+  cursor: not-allowed;
+}
+.ramo.approved {
+  background-color: #6bbb6b;
+  color: white;
+}
+.ramo.locked::before {
+  content: "🔒 ";
+}
+.ramo.approved::before {
+  content: "✅ ";
+}
